@@ -1,2 +1,2 @@
 # HackerRank
-My personal resolutions for the Hacker Rank challenges.
+My personal solutions for the Hacker Rank challenges.
