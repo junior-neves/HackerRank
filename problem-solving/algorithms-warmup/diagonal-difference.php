@@ -1,7 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Junior
- * Date: 27/08/2018
- * Time: 20:47
- */
+
+function diagonalDifference($arr) {
+    $n = count($arr);
+    $totalLR = $totalRL = 0;
+
+    for ($i = 0; $i < $n; $i++) {
+        $totalLR += $arr[$i][$i];
+        $totalRL += $arr[$i][($n-1) - $i];
+    }
+
+    return abs($totalLR - $totalRL);
+}
